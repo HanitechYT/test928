@@ -9,8 +9,7 @@ st.set_page_config(
 )
 
 # OpenAI client
-client = OpenAI(api_key="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")
-
+client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 # App title
 st.title("🤖 Simple AI Assistant")
 st.write("اكتب سؤالك، والمساعد رح يجاوبك مباشرة.")
